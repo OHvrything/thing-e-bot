@@ -1,3 +1,4 @@
+print("준비중입니다...")
 import discord
 from discord.ext import commands
 import os
