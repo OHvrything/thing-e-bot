@@ -21,12 +21,9 @@ async def on_message(message):
         await message.channel.send("띵이에게 인사하세요!")
         await message.channel.send("2. 띵아 뭐해")
         await message.channel.send("띵이가 뭐하는지 물어보세요!")
-        await message.channel.send("3. 띵아 말해")
-        await message.channel.send("띵이가 당신이 말하는 것을 말해요!")
-        await message.channel.send("사용 방법: '띵아 말해 <채팅방 ID> <할말>'")
-        await message.channel.send("4. 띵아 넌 누구")
+        await message.channel.send("3. 띵아 넌 누구")
         await message.channel.send("띵이에 대해 소개해줘요!")
-        await message.channel.send("5. 띵아 기분 어때")
+        await message.channel.send("4. 띵아 기분 어때")
         await message.channel.send("띵이의 기분을 물어보세요!")
         await message.channel.send("=======================")
         await message.channel.send("그리고 이 외에 다른 커맨드도 있어요!(예: 띵아 바보니)")
@@ -43,9 +40,9 @@ async def on_message(message):
         await message.channel.send("~~집어넣은 사람: 애브리띵~~")
         await message.channel.send("~~파이썬으로 이루어져 있다~~")
 
-    if message.content.startswith("띵아 말해"):
-        channel = message.content[5:24]
-        msg = message.content[25:]
+    if message.content.startswith("띵아 말해 해"):
+        channel = message.content[7:26]
+        msg = message.content[27:]
         await client.get_channel(int(channel)).send(msg)
 
     if message.content.startswith("띵아 바보니"):
