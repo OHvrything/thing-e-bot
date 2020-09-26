@@ -17,8 +17,8 @@ async def on_ready():
 async def on_message(message):
     if message.content.startswith("띵아 도움말"):
         await message.channel.send("https://cdn.discordapp.com/attachments/751333105171955772/755672858918780928/fbaab007aba79536.png")
-        await message.channel.send("띵이의 도움말이에요!")
-        await message.channel.send("띵아 도움말 놀기")
+        await message.channel.send("띵이의 도움말이에요!
+        띵아 도움말 놀기")
         await message.channel.send("띵이와 노는 법을 알려주는 도움말이에요!")
         await message.channel.send("=======================")
         await message.channel.send("그리고 이 외에 다른 커맨드도 있어요!(예: 띵아 바보니)")
