@@ -1,7 +1,2 @@
 discord.py
 asyncio
-discord
-time
-requests
-json
-re
